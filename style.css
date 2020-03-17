@@ -40,12 +40,12 @@
   color: black;
 } 
 .info{
-  width: 50%;
+  width: 40%;
   padding-left: 100px;
 }
 #pricing{
   display: flex;
-  width: 50%;
+  width: 60%;
   justify-content: flex-end;
 }
 
@@ -63,6 +63,7 @@ a{
   text-decoration: none;
   font-weight: bold;
   border: 3px solid red;
+  padding: 5px;
 }
 
 h1{

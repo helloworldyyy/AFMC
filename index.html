@@ -4,70 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFMC</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./newstyles.css">
 </head>
 <body>
-     <!-- The video -->
-<video autoplay muted loop id="myVideo">
+
+<div class="video-bg">
+  <video autoplay muted loop id="myVideo">
     <source src="./monkey" type="video/webm">
   </video>
-  
-  <!-- Optional: some overlay text to describe the video -->
-  <div class="content">
+</div>
 
-    <div class="info">
-        <h1>AFMC</h1>
-    <p class="lead">Alises Freelance Math Consulting</p>
-    <p>Accelerate your grades!!!</p>
-    <p>*For those with limited capacity...</p>
-    <!-- Use a button to pause/play the video with JavaScript -->
-    </div>
-    <div id="pricing">
-        <div class="pricebox">    
-            <div class="price">
-                <h3>VDMV Special Offer</h3>
-                <p>5EUR per 20min of logarithmic calculations</p>
-                <a href="https://www.10monkeys.com/us/">PreOrder NOW!!!</a>
-            </div>
-        </div>
-        <div class="pricebox">
-            <h3>Normal "Special" Offer</h3>
-            <p>230000 Tanzanian Shilling for calculator tutorial</p>
-            <a href="https://www.youtube.com/watch?v=x-2HjO4iGXI">PreOrder NOW!!!</a>
-        </div>
-        <div class="pricebox">
-          <h3>New Cool Merch is Here!!!</h3>
-          <p>7300000 Tanzanian Shilling for Ultimate Merch!!!!</p>
-          <a href="https://www.youtube.com/watch?v=g6dtUyx5AWE&feature=youtu.be">BUY MERCH NOW!!!</a>
-      </div>
+<div class="header">
+  
+  <div class="company">
+
+    <div class="company-name">
+      <h1>AFMC</h1>
+      <p>Alises Freelance Math Consulting</p>
     </div>
     
-  </div> 
+    <div class="extra-text">
+      <p>Accelerate your grades!!!</p>
+      <span>*For those with limited logical capacity...</span>
+    </div>
 
+  </div>
 
+  <div class="offers">
+    <div class="offer-box">
+      <div class="offer-head"><h3>Offer</h3></div>
+      <div class="offer-img offer-1"></div>
+      <div class="offer-price"><p>Price</p></div>
+      <div class="offer-btn"><a href="#">Preorder Now!!!</a></div>
+    </div>
+    <div class="offer-box">
+      <div class="offer-head"><h3>Offer</h3></div>
+      <div class="offer-img offer-2"></div>
+      <div class="offer-price"><p>Price</p></div>
+      <div class="offer-btn"><a href="#">Preorder Now!!!</a></div>
+    </div>
+    <div class="offer-box">
+      <div class="offer-head"><h3>Offer</h3></div>
+      <div class="offer-img offer-3"></div>
+      <div class="offer-price"><p>Price</p></div>
+      <div class="offer-btn"><a href="#">Preorder Now!!!</a></div>
+    </div>
+  </div> <!-- Offers End -->
 
-
-
+</div> <!-- Header End-->
 
 
 
 <script>
-      // Get the video
-var video = document.getElementById("myVideo");
 
-// Get the button
-var btn = document.getElementById("myBtn");
-
-// Pause and play the video, and change the button text
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
 </script>
 </body>
 </html>

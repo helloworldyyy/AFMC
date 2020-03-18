@@ -1,0 +1,101 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box; font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{color: white;}
+.video-bg{
+    z-index: 1;
+    height: 100vh; width: 100%;
+    overflow: hidden;
+}
+.video-bg video{
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+.header{
+    min-height: 100vh; width: 100%;
+    background-color: rgba(0, 0, 0, 0.292);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    display: flex; align-items: flex-end;
+}
+
+.company{
+    background-color: rgb(32, 32, 32); color: black;
+    text-align: center;
+    margin:  0 0 50px 50px;
+    height: 330px;
+    padding: 20px 30px;
+}
+/* .company-name{} */
+.company-name h1{
+    font-size: 150px;
+    font-weight: bold; color: black;
+}
+.company-name p{
+    text-transform: uppercase;
+    font-size: 15px; letter-spacing: 5px;
+    margin-top: -20px;
+    
+    
+}
+.extra-text{
+    margin: 30px 0;
+}
+.extra-text p{
+    font-size: 30px; text-transform: uppercase;
+}
+.extra-text span{
+    font-weight: lighter; font-size: 10px;
+    margin-top: 30px;
+}
+
+
+
+.offers{
+    height: 400px;
+    display: flex; justify-content: flex-end; align-items: center;
+    margin: 0 70px 20px auto;
+}
+.offer-box{
+    height: 300px;width: 220px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px; 
+    color: black; ;
+}
+.offer-head{
+    height: 60px;
+    display: flex; justify-content: center; align-items: center;
+}
+.offer-head h3{
+    text-transform: uppercase;
+    color: white;
+    font-weight: lighter;
+}
+
+.offer-img{
+    height: 130px;
+}
+.offer-1{ background: url('./monkeyStuff/makaks.jpg'); background-position: center; background-size: cover;}
+.offer-2{ background: url('./monkeyStuff/orangutan.webp'); background-position: center; background-size: cover;}
+.offer-3{ background: url('./monkeyStuff/gorilla.jfif'); background-position: center; background-size: cover;}
+.offer-price{
+    height: 45px;
+    display: flex; justify-content: center; align-items: center;
+}
+.offer-price p{
+    font-size: 20px; text-transform: uppercase;
+}
+.offer-btn{
+    height: 45px;
+    display: flex; justify-content: center; align-items: center;
+}
+.offer-box a{
+    color: white; background-color: black;
+    border: 2px solid white;
+    padding: 10px;
+}

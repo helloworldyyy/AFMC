@@ -1,101 +1,117 @@
-*{
-    margin: 0; padding: 0; box-sizing: border-box; font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-body{color: white;}
-.video-bg{
-    z-index: 1;
-    height: 100vh; width: 100%;
-    overflow: hidden;
+body{color: white; background-color: rgb(255, 40, 40);}
+#video{
+    position: absolute; height: 100vh; width: 100%; z-index: -1; position: fixed; top: 0;
 }
-.video-bg video{
-    min-width: 100%;
-    min-height: 100vh;
-    z-index: 1;
+#content{
+    height: 100%; width: 100%;
 }
+.video-bg{ height: 100vh; width: 100%; overflow: hidden; }
+.video-bg video{ min-width: 100%; min-height: 100vh; z-index: 1; }
 
 .header{
     min-height: 100vh; width: 100%;
-    background-color: rgba(0, 0, 0, 0.292);
-    z-index: 2;
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
     top: 0;
-    display: flex; align-items: flex-end;
+    display: flex; align-items: flex-end; flex-wrap: wrap;
 }
 
 .company{
-    background-color: rgb(32, 32, 32); color: black;
+    background-color: rgba(0, 0, 0, 0.489); color: white;
+    text-align: center; margin:  0 0 50px 50px;
+    height: 380px; padding: 20px 30px;
+}
+.company-name{ color: rgb(255, 40, 40); border: 5px solid;}
+.company-name h1{ font-size: 150px; font-weight: bold; }
+.company-name p{ color: white; text-transform: uppercase; font-size: 15px; letter-spacing: 6px; margin: -20px 10px 10px 10px; }
+.extra-text{ margin: 30px 0; }
+.extra-text p{ font-size: 30px; text-transform: uppercase; }
+.extra-text span{ font-weight: lighter; font-size: 10px; margin-top: 30px; }
+
+#offers{
+    min-height: 100vh; width: 100%;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; flex-wrap: wrap;
     text-align: center;
-    margin:  0 0 50px 50px;
-    height: 330px;
-    padding: 20px 30px;
-}
-/* .company-name{} */
-.company-name h1{
-    font-size: 150px;
-    font-weight: bold; color: black;
-}
-.company-name p{
-    text-transform: uppercase;
-    font-size: 15px; letter-spacing: 5px;
-    margin-top: -20px;
-    
-    
-}
-.extra-text{
-    margin: 30px 0;
-}
-.extra-text p{
-    font-size: 30px; text-transform: uppercase;
-}
-.extra-text span{
-    font-weight: lighter; font-size: 10px;
-    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-
+#offers h1{font-size: 60px; text-transform: uppercase; margin: 30px 0 60px 0; padding: 5px 10px; color: rgb(255, 40, 40);background-color: rgba(0, 0, 0, 0.5);}
 
 .offers{
-    height: 400px;
+    height: 330px;
     display: flex; justify-content: flex-end; align-items: center;
-    margin: 0 70px 20px auto;
 }
 .offer-box{
-    height: 300px;width: 220px;
-    background-color: rgb(0, 0, 0);
-    padding: 10px;
-    margin: 10px; 
-    color: black; ;
-}
-.offer-head{
-    height: 60px;
-    display: flex; justify-content: center; align-items: center;
-}
-.offer-head h3{
-    text-transform: uppercase;
+    height: 350px; width: 250px;
+    background-color: rgb(255, 40, 40);
+    padding: 10px; margin: 20px; 
     color: white;
-    font-weight: lighter;
+    box-shadow: 0px 0px 15px black;
+
+}
+.offer-head{ height: 60px; display: flex; justify-content: center; align-items: center; }
+.offer-head h3{ text-transform: uppercase; }
+
+.offer-img{ 
+    height: 160px; width: 160px; 
+    border-radius: 100px; margin: 0 auto;
+}
+.offer-1{background: url('./monkeyStuff/monkey-small-1.jpg');background-position: center; background-size: cover;}
+.offer-2{background: url('./monkeyStuff/monkey-small-2.jpg');background-position: center; background-size: cover;}
+.offer-3{background: url('./monkeyStuff/monkey-small-3.jpg');background-position: center; background-size: cover;}
+.offer-price{ height: 45px; display: flex; justify-content: center; align-items: center; }
+.offer-price p{ font-size: 20px; text-transform: uppercase; }
+.offer-btn{ height: 45px; display: flex; justify-content: center; align-items: center; }
+a{ 
+    color: rgb(255, 42, 42); background-color:rgb(255, 255, 255); 
+    padding: 10px; 
+    text-decoration: none; text-transform: uppercase; font-weight: 400;
+    transition: 0.3s ease-in-out; 
+}
+a:hover{
+    color: rgb(255, 41, 41); 
+    background-color: rgb(0, 0, 0);
 }
 
-.offer-img{
-    height: 130px;
+.m-b-r{
+    position: fixed; height: 100px; width: 100px; bottom: 0; right: 0;
+    height: 263px; width: 287px;
+    animation-name: bottom-right; animation-duration: 15s; animation-iteration-count: infinite;
 }
-.offer-1{ background: url('./monkeyStuff/makaks.jpg'); background-position: center; background-size: cover;}
-.offer-2{ background: url('./monkeyStuff/orangutan.webp'); background-position: center; background-size: cover;}
-.offer-3{ background: url('./monkeyStuff/gorilla.jfif'); background-position: center; background-size: cover;}
-.offer-price{
-    height: 45px;
-    display: flex; justify-content: center; align-items: center;
+.m-b-l{
+    position: fixed; height: 100px; width: 100px; bottom: 0; left: 0;
+    height: 330px; width: 250px;
+    animation-name: bottom-left; animation-duration: 10s; animation-iteration-count: infinite;
+    transform: rotate(-25deg);
 }
-.offer-price p{
-    font-size: 20px; text-transform: uppercase;
+.m-t-r{
+    position: fixed; height: 100px; width: 100px; top: 0; right: 0;
+    height: 340px; width: 245px;
+    transform: rotate(-45deg); 
+    animation-name: top-right; animation-duration: 5s; animation-iteration-count: infinite;
 }
-.offer-btn{
-    height: 45px;
-    display: flex; justify-content: center; align-items: center;
+
+
+@keyframes bottom-left{
+    from{ margin: 0 0px -450px 0px; }
+    50%{ margin: 0 0px -450px 0px; }
+    80%{ margin: 0 0px -260px 0px; }
+    85%{ margin: 0 0px -160px 0px; }
+    90%{ margin: 0 0px -450px 0px; }
+    to{ margin: 0 0px -450px 0px; }
 }
-.offer-box a{
-    color: white; background-color: black;
-    border: 2px solid white;
-    padding: 10px;
+@keyframes bottom-right{
+    from{ margin: 0 -300px -50px 0; }
+    40%{ margin: 0 -300px -50px 0; }
+    50%{ margin: 0 -0px 0px 0; }
+    52%{ margin: 0 -300px -50px 0; }
+    to{ margin: 0 -300px -50px 0; }
+}
+@keyframes top-right{
+    from{ margin: 0 -400px 0 0; }
+    40%{ margin: 0 -400px 0 0; }
+    75%{ margin: 0 -200px 0 0; }
+    85%{ margin: 0 -400px 0 0; }
+    to{ margin: 0 -400px 0 0; }
 }
